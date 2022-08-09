@@ -1,7 +1,7 @@
 ## BUILD
 ```
 docker build \
-    --tag adkwolek/hello:latest \
+    --tag adamkwolek/firstimage:latest \
     .
 ```
 ## RUN    
@@ -9,12 +9,12 @@ docker build \
 docker run -d \
     --name hello\
     --publish 8000:80\
-    adkwolek/hello:latest
+    adamkwolek/firstimage:latest
 ```
 
 ## CLEAN
 ```
 docker stop hello
 docker rm hello
-docker rmi adkwolek/hello:latest
+docker rmi adamkwolek/firstimage:latest
 ```
